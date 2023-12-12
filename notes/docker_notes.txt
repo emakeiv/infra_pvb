@@ -1,0 +1,10 @@
+
+docker build . --tag extending_airflow:latest
+
+in docker-compose.yaml
+image: ${AIRFLOW_IMAGE_NAME:-extending_airflow:latest}
+
+docker-compose up -d --no-deps --build airflow-webserver airflow-scheduler
+
+# SOURCE build
+docker build . --build-arg AIRFLOW_VERSION='2.0.1' --tag customising_airflow:latest

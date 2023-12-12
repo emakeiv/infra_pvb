@@ -1,7 +1,7 @@
 version: '3.8'
 x-airflow-common:
   &airflow-common
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}
+  #image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}
   build:
     context: ./dockerfiles/airflow
   environment:
@@ -29,7 +29,8 @@ x-airflow-common:
       condition: service_healthy
 
 services:
-  postgres:
+  
+  postgres: 
     container_name: postgres
     image: postgres
     environment:
@@ -38,9 +39,9 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       PGDATA: /data/postgres
     volumes:
-      - postgres-db-volume:/data/postgres
+      - db-storage:/data/postgres
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "root"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
       retries: 5
       start_period: 5s
@@ -49,7 +50,7 @@ services:
       - "5432:5432"
     networks:
       - postgres
-  
+
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
@@ -75,7 +76,7 @@ services:
       MINIO_ACCESS_KEY: ${AWS_ACCESS_KEY_ID}
       MINIO_SECRET_KEY: ${AWS_SECRET_ACCESS_KEY}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9001/minio/health/live"]
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
       interval: 30s
       timeout: 20s
       retries: 3
@@ -86,7 +87,7 @@ services:
 
   mlflow:
     container_name: mlflow_server
-    build : ./mlflow_image
+    build : ./images/mlflow_image
     image: mlflow_server
     command: mlflow server --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres/${POSTGRES_DB} --default-artifact-root s3://${AWS_S3_BUCKET} --host 0.0.0.0   
     ports:
@@ -290,5 +291,5 @@ networks:
   driver: bridge
 
 volumes:
-  postgres-db-volume:
+  db-storage:
   db-data:

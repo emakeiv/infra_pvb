@@ -1,0 +1,9 @@
+
+Error:
+psql -U pvb_main_user
+psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed:
+FATAL:  database "pvb_main_user" does not exist
+
+The error you're encountering indicates that the psql command is trying to connect to a 
+database named pvb_main_user, which is the same as your username. This is because when you don't
+specify a database name with the psql command, it defaults to using the username as the database name

@@ -1,4 +1,6 @@
+xlrd
 boto3
+minio
 scikit-learn
+psycopg2-binary
 apache-airflow[celery]
-
