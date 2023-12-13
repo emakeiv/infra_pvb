@@ -6,16 +6,17 @@ from sqlalchemy import (
     Column,
     String,
     Integer,
-    DateTime
+    TIMESTAMP
 )
 
 @dataclass
-class DataVendors(Base):
-      __tablename__ = 'data_vendor'
-      __metadata__ = Base.metadata
-      id: int = Column(Integer, primary_key=True, unique=True, nullable=False)
-      name: str = Column(String)
-      website_url: str = Column(String(64))
-      created_date: datetime = Column(DateTime)
-      updated_date: datetime = Column(DateTime)
+class DataVendor(Base):
+    __tablename__ = 'data_vendor'
+    __metadata__ = Base.metadata
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String, unique=True, nullable=False)
+    website_url = Column(String(255))
+    created = Column(TIMESTAMP, nullable=False)
+    updated = Column(TIMESTAMP, nullable=False)
 
