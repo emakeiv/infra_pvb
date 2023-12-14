@@ -1,6 +1,12 @@
-xlrd
-boto3
-minio
-scikit-learn
-psycopg2-binary
 apache-airflow[celery]
+psycopg2-binary
+scikit-learn
+oandapyV20
+backtrader
+alpaca-py
+pandas
+mlflow
+minio
+boto3
+xlrd
+v20

@@ -1,12 +1,42 @@
-.env
-
 logs/*
 dags/*
 
 untrack/
 mlflow
-minio/storage/.minio.sys
-minio/storage/mlflow-models/
-minio/storage/support-files/
-
+minio/.minio.sys/*
+minio/mlflow-models/*
+minio/support-files/*
 notes/*
+
+# environments
+.env
+.venv
+env/
+venv/
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Sphinx documentation
+docs/_build/
+
+# Database
+*.db
+*.rdb
+
+# VS Code
+.vscode/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# model and storage files
+.joblib
