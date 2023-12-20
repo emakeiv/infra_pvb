@@ -40,3 +40,5 @@ docs/_build/
 
 # model and storage files
 .joblib
+
+*.pyc

@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-from app.etl.service import main
+from app.sal.etl.main import main
 
 DAG_DEFAULT_ARGS={
     'owner': 'airflow',
@@ -13,8 +13,8 @@ DAG_DEFAULT_ARGS={
 
 with DAG(
       default_args = DAG_DEFAULT_ARGS,
-      dag_id='12_14_download_fx_mkt_data',
-      start_date=datetime(2023, 12,13),
+      dag_id='12_20_download_fx_mkt_data',
+      start_date=datetime(2023, 12,19),
       schedule_interval='@daily'
 ) as dag:
       task1 = PythonOperator(

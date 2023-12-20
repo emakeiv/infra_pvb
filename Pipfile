@@ -9,6 +9,9 @@ pydantic = "*"
 sqlalchemy = "*"
 psycopg2-binary = "*"
 oandapyv20 = "*"
+requests = "*"
+six = "*"
+pydantic-settings = "*"
 
 [dev-packages]
 

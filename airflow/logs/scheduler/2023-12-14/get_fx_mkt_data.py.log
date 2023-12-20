@@ -8826,3 +8826,787 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
 [2023-12-14T14:33:45.284+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
 [2023-12-14T14:33:45.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.129 seconds
+[2023-12-14T14:34:16.034+0000] {processor.py:157} INFO - Started process (PID=702) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:34:16.036+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:34:16.039+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:34:16.038+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:34:16.053+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:34:16.050+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:34:16.055+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:34:16.154+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.131 seconds
+[2023-12-14T14:34:46.793+0000] {processor.py:157} INFO - Started process (PID=710) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:34:46.798+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:34:46.801+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:34:46.800+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:34:46.814+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:34:46.811+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:34:46.815+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:34:46.906+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.122 seconds
+[2023-12-14T14:35:17.492+0000] {processor.py:157} INFO - Started process (PID=725) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:35:17.494+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:35:17.496+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:35:17.496+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:35:17.510+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:35:17.507+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:35:17.511+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:35:17.598+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.115 seconds
+[2023-12-14T14:35:48.226+0000] {processor.py:157} INFO - Started process (PID=734) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:35:48.230+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:35:48.233+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:35:48.232+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:35:48.246+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:35:48.243+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:35:48.247+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:35:48.342+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.125 seconds
+[2023-12-14T14:36:18.890+0000] {processor.py:157} INFO - Started process (PID=742) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:36:18.894+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:36:18.897+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:36:18.896+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:36:18.913+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:36:18.909+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:36:18.914+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:36:19.005+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.125 seconds
+[2023-12-14T14:36:49.554+0000] {processor.py:157} INFO - Started process (PID=750) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:36:49.558+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:36:49.561+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:36:49.560+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:36:49.574+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:36:49.571+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:36:49.575+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:36:49.664+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.120 seconds
+[2023-12-14T14:37:20.280+0000] {processor.py:157} INFO - Started process (PID=758) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:37:20.282+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:37:20.285+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:37:20.284+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:37:20.299+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:37:20.296+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:37:20.301+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:37:20.394+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.125 seconds
+[2023-12-14T14:37:50.916+0000] {processor.py:157} INFO - Started process (PID=766) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:37:50.918+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:37:50.921+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:37:50.920+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:37:50.936+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:37:50.932+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:37:50.937+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:37:51.035+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.132 seconds
+[2023-12-14T14:38:21.582+0000] {processor.py:157} INFO - Started process (PID=774) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:38:21.584+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:38:21.586+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:38:21.585+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:38:21.601+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:38:21.598+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:38:21.602+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:38:21.695+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.122 seconds
+[2023-12-14T14:38:52.422+0000] {processor.py:157} INFO - Started process (PID=782) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:38:52.433+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:38:52.436+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:38:52.435+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:38:52.450+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:38:52.447+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:38:52.452+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:38:52.557+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.147 seconds
+[2023-12-14T14:39:23.073+0000] {processor.py:157} INFO - Started process (PID=790) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:39:23.075+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:39:23.078+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:39:23.077+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:39:23.093+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:39:23.090+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:39:23.094+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:39:23.183+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.122 seconds
+[2023-12-14T14:39:53.809+0000] {processor.py:157} INFO - Started process (PID=797) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:39:53.813+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:39:53.816+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:39:53.815+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:39:53.832+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:39:53.829+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:39:53.833+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:39:53.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.122 seconds
+[2023-12-14T14:40:24.557+0000] {processor.py:157} INFO - Started process (PID=805) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:40:24.561+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:40:24.563+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:40:24.562+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:40:24.576+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:40:24.573+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:40:24.577+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:40:24.664+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.116 seconds
+[2023-12-14T14:40:55.165+0000] {processor.py:157} INFO - Started process (PID=814) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:40:55.168+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:40:55.171+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:40:55.170+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:40:55.186+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:40:55.182+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:40:55.187+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:40:55.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.125 seconds
+[2023-12-14T14:41:25.758+0000] {processor.py:157} INFO - Started process (PID=822) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:41:25.762+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:41:25.764+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:41:25.763+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:41:25.778+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:41:25.775+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:41:25.780+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:41:25.871+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.123 seconds
+[2023-12-14T14:41:56.501+0000] {processor.py:157} INFO - Started process (PID=830) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:41:56.503+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:41:56.505+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:41:56.505+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:41:56.518+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:41:56.515+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:41:56.519+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:41:56.607+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.115 seconds
+[2023-12-14T14:42:27.134+0000] {processor.py:157} INFO - Started process (PID=838) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:42:27.138+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:42:27.140+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:42:27.139+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:42:27.154+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:42:27.151+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:42:27.155+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:42:27.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.118 seconds
+[2023-12-14T14:42:57.784+0000] {processor.py:157} INFO - Started process (PID=846) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:42:57.786+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:42:57.789+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:42:57.788+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:42:57.802+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:42:57.799+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:42:57.803+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:42:57.891+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.117 seconds
+[2023-12-14T14:43:28.461+0000] {processor.py:157} INFO - Started process (PID=854) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:43:28.465+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:43:28.467+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:43:28.466+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:43:28.480+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:43:28.477+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:43:28.481+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:43:28.573+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.121 seconds
+[2023-12-14T14:43:59.195+0000] {processor.py:157} INFO - Started process (PID=863) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:43:59.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:43:59.200+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:43:59.199+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:43:59.213+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:43:59.210+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:43:59.214+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:43:59.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.128 seconds
+[2023-12-14T14:44:30.022+0000] {processor.py:157} INFO - Started process (PID=871) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:44:30.026+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:44:30.029+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:44:30.028+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:44:30.042+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:44:30.039+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:44:30.043+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:44:30.131+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.118 seconds
+[2023-12-14T14:45:00.639+0000] {processor.py:157} INFO - Started process (PID=879) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:45:00.640+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:45:00.643+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:45:00.642+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:45:00.657+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:45:00.653+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:45:00.658+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:45:00.749+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.120 seconds
+[2023-12-14T14:45:31.255+0000] {processor.py:157} INFO - Started process (PID=887) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:45:31.261+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:45:31.264+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:45:31.263+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:45:31.277+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:45:31.274+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:45:31.278+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:45:31.366+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.121 seconds
+[2023-12-14T14:46:02.019+0000] {processor.py:157} INFO - Started process (PID=895) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:46:02.021+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:46:02.023+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:46:02.022+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:46:02.037+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:46:02.033+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:46:02.038+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:46:02.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.113 seconds
+[2023-12-14T14:46:32.704+0000] {processor.py:157} INFO - Started process (PID=903) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:46:32.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:46:32.710+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:46:32.709+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:46:32.727+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:46:32.722+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:46:32.728+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:46:32.832+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.139 seconds
+[2023-12-14T14:47:03.388+0000] {processor.py:157} INFO - Started process (PID=911) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:47:03.392+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:47:03.397+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:47:03.395+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:47:03.412+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:47:03.409+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:47:03.413+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:47:03.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.119 seconds
+[2023-12-14T14:47:34.061+0000] {processor.py:157} INFO - Started process (PID=919) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:47:34.063+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:47:34.065+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:47:34.064+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:47:34.080+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:47:34.077+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:47:34.081+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:47:34.168+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.117 seconds
+[2023-12-14T14:48:04.925+0000] {processor.py:157} INFO - Started process (PID=927) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:48:04.928+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:48:04.931+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:48:04.930+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:48:04.944+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:48:04.941+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:48:04.945+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:48:05.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.117 seconds
+[2023-12-14T14:48:35.584+0000] {processor.py:157} INFO - Started process (PID=935) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:48:35.586+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:48:35.588+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:48:35.588+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:48:35.603+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:48:35.599+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:48:35.604+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:48:35.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.116 seconds
+[2023-12-14T14:49:06.406+0000] {processor.py:157} INFO - Started process (PID=943) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:49:06.410+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:49:06.412+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:49:06.411+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:49:06.426+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:49:06.423+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:49:06.427+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:49:06.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.124 seconds
+[2023-12-14T14:49:37.363+0000] {processor.py:157} INFO - Started process (PID=951) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:49:37.365+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:49:37.367+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:49:37.366+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:49:37.382+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:49:37.379+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:49:37.383+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:49:37.470+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.117 seconds
+[2023-12-14T14:50:07.895+0000] {processor.py:157} INFO - Started process (PID=959) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:50:07.899+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:50:07.902+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:50:07.901+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:50:07.915+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:50:07.912+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:50:07.916+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:50:08.006+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.120 seconds
+[2023-12-14T14:50:38.598+0000] {processor.py:157} INFO - Started process (PID=967) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:50:38.602+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:50:38.606+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:50:38.605+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:50:38.619+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:50:38.616+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:50:38.620+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:50:38.709+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.120 seconds
+[2023-12-14T14:51:09.439+0000] {processor.py:157} INFO - Started process (PID=975) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:51:09.443+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:51:09.445+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:51:09.445+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:51:09.459+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:51:09.456+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:51:09.460+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:51:09.546+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.116 seconds
+[2023-12-14T14:51:40.143+0000] {processor.py:157} INFO - Started process (PID=983) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:51:40.145+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:51:40.148+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:51:40.147+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:51:40.164+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:51:40.160+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:51:40.166+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:51:40.261+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.128 seconds
+[2023-12-14T14:52:10.994+0000] {processor.py:157} INFO - Started process (PID=992) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:52:11.000+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:52:11.003+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:52:11.002+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:52:11.016+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:52:11.013+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:52:11.018+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:52:11.104+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.119 seconds
+[2023-12-14T14:52:41.712+0000] {processor.py:157} INFO - Started process (PID=1000) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:52:41.714+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:52:41.717+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:52:41.716+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:52:41.730+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:52:41.727+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:52:41.731+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:52:41.816+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.113 seconds
+[2023-12-14T14:53:12.508+0000] {processor.py:157} INFO - Started process (PID=1008) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:53:12.511+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:53:12.514+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:53:12.513+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:53:12.528+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:53:12.526+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:53:12.530+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:53:12.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.116 seconds
+[2023-12-14T14:53:43.155+0000] {processor.py:157} INFO - Started process (PID=1017) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:53:43.157+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:53:43.159+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:53:43.158+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:53:43.174+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:53:43.171+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:53:43.175+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:53:43.263+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.118 seconds
+[2023-12-14T14:54:13.960+0000] {processor.py:157} INFO - Started process (PID=1025) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:54:13.964+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:54:13.967+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:54:13.966+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:54:13.981+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:54:13.978+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:54:13.983+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:54:14.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.128 seconds
+[2023-12-14T14:54:44.760+0000] {processor.py:157} INFO - Started process (PID=1032) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:54:44.762+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:54:44.765+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:54:44.764+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:54:44.778+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:54:44.775+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:54:44.779+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:54:44.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.117 seconds
+[2023-12-14T14:55:15.387+0000] {processor.py:157} INFO - Started process (PID=1040) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:55:15.391+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:55:15.394+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:55:15.393+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:55:15.407+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:55:15.405+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:55:15.409+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:55:15.494+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.118 seconds
+[2023-12-14T14:55:46.125+0000] {processor.py:157} INFO - Started process (PID=1048) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:55:46.129+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:55:46.131+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:55:46.131+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:55:46.144+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:55:46.141+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:55:46.145+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:55:46.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.116 seconds
+[2023-12-14T14:56:16.804+0000] {processor.py:157} INFO - Started process (PID=1057) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:56:16.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:56:16.808+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:56:16.808+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:56:16.822+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:56:16.819+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:56:16.823+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:56:16.909+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.115 seconds
+[2023-12-14T14:56:47.457+0000] {processor.py:157} INFO - Started process (PID=1065) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:56:47.460+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:56:47.462+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:56:47.462+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:56:47.476+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:56:47.473+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:56:47.477+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:56:47.567+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.120 seconds
+[2023-12-14T14:57:18.278+0000] {processor.py:157} INFO - Started process (PID=1073) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:57:18.280+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:57:18.282+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:57:18.282+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:57:18.297+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:57:18.294+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:57:18.298+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:57:18.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.118 seconds
+[2023-12-14T14:57:49.058+0000] {processor.py:157} INFO - Started process (PID=1081) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:57:49.061+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:57:49.063+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:57:49.062+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:57:49.076+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:57:49.073+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:57:49.077+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:57:49.163+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.115 seconds
+[2023-12-14T14:58:19.771+0000] {processor.py:157} INFO - Started process (PID=1089) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:58:19.773+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:58:19.776+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:58:19.775+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:58:19.789+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:58:19.786+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:58:19.790+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:58:19.877+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.115 seconds
+[2023-12-14T14:58:50.414+0000] {processor.py:157} INFO - Started process (PID=1097) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:58:50.418+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-14T14:58:50.421+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:58:50.420+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:58:50.435+0000] {logging_mixin.py:154} INFO - [2023-12-14T14:58:50.432+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/get_fx_mkt_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/get_fx_mkt_data.py", line 6, in <module>
+    from app.etl.service import main
+  File "/opt/airflow/app/etl/service.py", line 2, in <module>
+    from services.oanda.fx_data_service import ForexDataService
+ModuleNotFoundError: No module named 'services.oanda.fx_data_service'
+[2023-12-14T14:58:50.437+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-14T14:58:50.523+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 0.118 seconds

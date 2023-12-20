@@ -1,5 +1,5 @@
 
-class DataService():
+class ForexDataService():
 
     def __init__(self):
             pass
