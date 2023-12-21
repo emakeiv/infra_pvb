@@ -1,0 +1,26 @@
+[2023-12-21T09:04:10.599+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 12_21_fx_mkt_data.first_attempt manual__2023-12-21T09:04:04.388901+00:00 [queued]>
+[2023-12-21T09:04:10.643+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 12_21_fx_mkt_data.first_attempt manual__2023-12-21T09:04:04.388901+00:00 [queued]>
+[2023-12-21T09:04:10.646+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-12-21T09:04:10.767+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): first_attempt> on 2023-12-21 09:04:04.388901+00:00
+[2023-12-21T09:04:10.790+0000] {standard_task_runner.py:57} INFO - Started process 873 to run task
+[2023-12-21T09:04:10.800+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', '12_21_fx_mkt_data', 'first_attempt', 'manual__2023-12-21T09:04:04.388901+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/get_fx_mkt_data.py', '--cfg-path', '/tmp/tmpkkjexqc_']
+[2023-12-21T09:04:10.813+0000] {standard_task_runner.py:85} INFO - Job 49: Subtask first_attempt
+[2023-12-21T09:04:11.086+0000] {task_command.py:416} INFO - Running <TaskInstance: 12_21_fx_mkt_data.first_attempt manual__2023-12-21T09:04:04.388901+00:00 [running]> on host a265892d508c
+[2023-12-21T09:04:11.491+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='12_21_fx_mkt_data' AIRFLOW_CTX_TASK_ID='first_attempt' AIRFLOW_CTX_EXECUTION_DATE='2023-12-21T09:04:04.388901+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-21T09:04:04.388901+00:00'
+[2023-12-21T09:04:11.495+0000] {oandapyV20.py:207} INFO - setting up API-client for environment practice
+[2023-12-21T09:04:12.594+0000] {logging_mixin.py:154} INFO - repo_class type: <class 'abc.ABCMeta'>
+[2023-12-21T09:04:12.595+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/app/sal/etl/main.py", line 50, in main
+    repository_registry.add('security_symbol_repo', SecuritySymbolRepository)
+  File "/opt/airflow/app/repository/registry.py", line 20, in add
+    raise TypeError('repository class must be a subclass of IRepository')
+TypeError: repository class must be a subclass of IRepository
+[2023-12-21T09:04:12.656+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=12_21_fx_mkt_data, task_id=first_attempt, execution_date=20231221T090404, start_date=20231221T090410, end_date=20231221T090412
+[2023-12-21T09:04:12.702+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 49 for task first_attempt (repository class must be a subclass of IRepository; 873)
+[2023-12-21T09:04:12.751+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-21T09:04:12.837+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

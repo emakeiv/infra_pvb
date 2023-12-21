@@ -13,7 +13,7 @@ DAG_DEFAULT_ARGS={
 
 with DAG(
       default_args = DAG_DEFAULT_ARGS,
-      dag_id='12_20_download_fx_mkt_data',
+      dag_id='12_21_fx_mkt_data',
       start_date=datetime(2023, 12,19),
       schedule_interval='@daily'
 ) as dag:

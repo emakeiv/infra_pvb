@@ -6,17 +6,29 @@ import oandapyV20.endpoints.instruments as instruments
 from oandapyV20 import API
 from oandapyV20.contrib.factories import InstrumentsCandlesFactory
 
+import pandas as pd
 
 class ForexDataService():
 
-    def __init__(self, access_token, acc_id, environment='practice', headers=None, request_params=None):
+    def __init__(self, access_token, account_id, environment='practice', headers=None, request_params=None):
             
-            self.acc_id = acc_id
+            self.account_id = account_id
             self.client = API(access_token=access_token, environment=environment)
     def health_check(self):
             return 'Hi'
 
-    def fetch_historical_data(self, instrument, start_date, end_date, granularity='D'):
+    def get_list_of_instruments():
+
+        now = datetime.datetime.utcnow()
+        
+
+        response = accounts.AccountInstruments(accountID=self.account_id)
+        rv = client.request(response)
+
+        print(rv)
+   
+
+    def fetch_historical_data(self, instrument, start_date, end_date=None, granularity='D'):
         """
         Fetch historical data for a given financial instrument from OANDA API.
         Args:

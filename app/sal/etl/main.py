@@ -1,4 +1,7 @@
 
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
 from sal.services.oanda.data_service import ForexDataService
 from sal.services.boto.data_service import S3DataService
 from repository.registry import RepositoryRegistry
@@ -33,11 +36,11 @@ def main():
 
       s3_data_service = S3DataService(
       "http://minio:9000",
-      "minioadmin",
-      "minioadmin",
+      settings.aws_secret_access_key,
+      settings.aws_access_key_id,
       "sec-fx"
       )
-      tickers = s3_data_service.read_excel("tickers.xlsx", sheet_name="daily").tolist()
+      tickers = s3_data_service.read_excel("tickers.xlsx", sheet_name="daily")
       
 
       engine                       = create_engine(settings.main_db_url)
@@ -56,6 +59,6 @@ def main():
       instrument, granularity, _from = "EUR_USD", "M15", "2023-12-20T00:00:00Z"
 
       data = fx_data_service.fetch_historical_data(instrument=instrument, start_date=_from, granularity=granularity)
-      print(data)
+      
 
 

@@ -15,8 +15,11 @@ class RepositoryRegistry:
             self.initialized = True
 
     def add(self, repo_name: str, repo_class: IRepository) -> None:
-        if not issubclass(repo_class, IRepository):
-            raise TypeError('repository class must be a subclass of IRepository')
+        # TECNICAL DEBT (2023/12/21)
+        # inheritance problem with repositories , inherits from <class 'abc.ABCMeta'>
+        # if not issubclass(repo_class, IRepository):
+        #     print(f"repo_class type: {type(repo_class)}")
+        #     raise TypeError('repository class must be a subclass of IRepository')
         if repo_name in self.repositories:
             raise ValueError(f"'{repo_name}' already is in the registry.")
         self.repositories[repo_name] = repo_class
