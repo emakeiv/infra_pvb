@@ -1,9 +1,12 @@
 apache-airflow[celery]
+pydantic-settings
 psycopg2-binary
 scikit-learn
 oandapyV20
 backtrader
 alpaca-py
+pydantic
+openpyxl
 pandas
 mlflow
 minio

@@ -12790,3 +12790,98 @@ ImportError: cannot import name 'S3DataService' from 'sal.services.boto.data_ser
 [2023-12-20T16:25:43.940+0000] {processor.py:157} INFO - Started process (PID=8517) to work on /opt/airflow/dags/get_fx_mkt_data.py
 [2023-12-20T16:25:43.944+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
 [2023-12-20T16:25:43.946+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:25:43.945+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:25:45.387+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:25:45.503+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:25:45.501+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:25:45.602+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:25:45.602+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:25:45.675+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.745 seconds
+[2023-12-20T16:26:15.822+0000] {processor.py:157} INFO - Started process (PID=8526) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:26:15.828+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:26:15.830+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:26:15.830+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:26:17.164+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:26:17.274+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:26:17.272+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:26:17.378+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:26:17.377+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:26:17.447+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.635 seconds
+[2023-12-20T16:26:48.120+0000] {processor.py:157} INFO - Started process (PID=8535) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:26:48.122+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:26:48.125+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:26:48.124+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:26:49.410+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:26:49.514+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:26:49.512+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:26:49.612+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:26:49.611+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:26:49.686+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.574 seconds
+[2023-12-20T16:27:19.880+0000] {processor.py:157} INFO - Started process (PID=8544) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:27:19.883+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:27:19.888+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:27:19.887+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:27:21.210+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:27:21.324+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:27:21.322+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:27:21.415+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:27:21.414+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:27:21.480+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.611 seconds
+[2023-12-20T16:27:51.935+0000] {processor.py:157} INFO - Started process (PID=8553) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:27:51.939+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:27:51.941+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:27:51.940+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:27:53.254+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:27:53.363+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:27:53.361+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:27:53.461+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:27:53.460+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:27:53.522+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.596 seconds
+[2023-12-20T16:28:23.614+0000] {processor.py:157} INFO - Started process (PID=8563) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:28:23.616+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:28:23.619+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:28:23.618+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:28:24.999+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:28:25.104+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:28:25.102+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:28:25.203+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:28:25.202+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:28:25.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.676 seconds
+[2023-12-20T16:28:55.749+0000] {processor.py:157} INFO - Started process (PID=8572) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:28:55.751+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:28:55.753+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:28:55.752+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:28:57.162+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:28:57.270+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:28:57.269+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:28:57.370+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:28:57.370+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:28:57.442+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.703 seconds
+[2023-12-20T16:29:28.150+0000] {processor.py:157} INFO - Started process (PID=8582) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:29:28.154+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:29:28.156+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:29:28.155+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:29:29.442+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:29:29.553+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:29:29.551+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:29:29.656+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:29:29.655+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:29:29.725+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.585 seconds
+[2023-12-20T16:30:00.125+0000] {processor.py:157} INFO - Started process (PID=8591) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:30:00.128+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:30:00.130+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:30:00.129+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:30:01.406+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:30:01.522+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:30:01.520+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:30:01.629+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:30:01.628+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:30:01.696+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.580 seconds
+[2023-12-20T16:30:31.946+0000] {processor.py:157} INFO - Started process (PID=8600) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:30:31.950+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:30:31.953+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:30:31.952+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:30:33.247+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:30:33.357+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:30:33.355+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:30:33.448+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:30:33.447+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:30:33.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.578 seconds
+[2023-12-20T16:31:03.918+0000] {processor.py:157} INFO - Started process (PID=8608) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:31:03.919+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:31:03.922+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:31:03.921+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:31:05.229+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:31:05.340+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:31:05.338+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:31:05.438+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:31:05.438+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:31:05.503+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.594 seconds
+[2023-12-20T16:31:35.676+0000] {processor.py:157} INFO - Started process (PID=8617) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:31:35.679+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:31:35.681+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:31:35.681+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:31:36.995+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:31:37.100+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:31:37.098+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:31:37.189+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:31:37.188+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:31:37.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.594 seconds
+[2023-12-20T16:32:07.875+0000] {processor.py:157} INFO - Started process (PID=8626) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:32:07.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:32:07.881+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:32:07.880+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:32:09.321+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:32:09.431+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:32:09.429+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:32:09.531+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:32:09.531+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:32:09.598+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.733 seconds
+[2023-12-20T16:32:40.401+0000] {processor.py:157} INFO - Started process (PID=8643) to work on /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:32:40.405+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/get_fx_mkt_data.py for tasks to queue
+[2023-12-20T16:32:40.407+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:32:40.406+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:32:41.749+0000] {processor.py:839} INFO - DAG(s) dict_keys(['12_20_download_fx_mkt_data']) retrieved from /opt/airflow/dags/get_fx_mkt_data.py
+[2023-12-20T16:32:41.910+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:32:41.908+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-20T16:32:42.057+0000] {logging_mixin.py:154} INFO - [2023-12-20T16:32:42.056+0000] {dag.py:3722} INFO - Setting next_dagrun for 12_20_download_fx_mkt_data to 2023-12-20T00:00:00+00:00, run_after=2023-12-21T00:00:00+00:00
+[2023-12-20T16:32:42.178+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/get_fx_mkt_data.py took 1.786 seconds

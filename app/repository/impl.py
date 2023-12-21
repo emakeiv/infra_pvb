@@ -9,17 +9,6 @@ from dal.models.securities_model import (
 )
 from repository.entity import RepositoryEntity
 
-
-'''
-The repository classes acts as an intermediary between the 
-application code and the database data mapping laters. Acting like an in-memory
-collection of domain objects.It provides methods for 
-retrieving, adding, updating, and deleting data entities in 
-the database using the database session. The methods make use 
-of the data model class, which is defined in the dal/models location, 
-to interact with the underlying database tables.
-'''
-
 class ExchangeRepository(RepositoryEntity[Exchange]):
     def __init__(self, session):
         super().__init__(Exchange, session)
@@ -32,11 +21,31 @@ class SecuritySymbolRepository(RepositoryEntity[SecuritySymbol]):
     def __init__(self, session):
         super().__init__(SecuritySymbol, session)
 
+        def customet_method_goes_here():
+            pass
+
 class SecurityDailyPriceRepository(RepositoryEntity[SecurityDailyPrice]):
     def __init__(self, session):
-        super().__init__(SecuritySySecurityDailyPricembol, session)
+        super().__init__(SecurityDailyPrice, session)
+
+        def get_last_dates(self, tickers:list):
+            query = self.session.query(
+                SecuritySymbol.id.label('security_id'),
+                SecuritySymbol.ticker,
+                func.max(SecurityDailyPrice.date).label('last_date')
+            ).outerjoin(
+                SecurityDailyPrice, SecuritySymbol.id == SecurityDailyPrice.security_id
+            ).filter(
+                SecuritySymbol.ticker.in_(tickers)
+            ).group_by(
+                SecuritySymbol.id, SecuritySymbol.ticker
+            )
+            return query.all()
 
 class SecurityMinutelyPriceRepository(RepositoryEntity[SecurityMinutelyPrice]):
     def __init__(self, session):
         super().__init__(SecurityMinutelyPrice, session)
+
+        def customet_method_goes_here():
+            pass
 

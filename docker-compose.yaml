@@ -220,6 +220,7 @@ services:
         condition: service_completed_successfully
     networks:
       - postgres
+      - minio_app
   
   airflow-scheduler:
     <<: *airflow-common
@@ -238,6 +239,7 @@ services:
     networks:
       - postgres
       - redis_net
+      - minio_app
 
   airflow-worker:
     <<: *airflow-common
@@ -264,6 +266,7 @@ services:
     networks:
       - postgres
       - redis_net
+      - minio_app
 
   nginx:
     image: nginx

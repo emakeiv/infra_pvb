@@ -1,0 +1,24 @@
+[2023-12-21T04:47:01.643+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 12_20_download_fx_mkt_data.first_attempt scheduled__2023-12-20T00:00:00+00:00 [queued]>
+[2023-12-21T04:47:01.685+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 12_20_download_fx_mkt_data.first_attempt scheduled__2023-12-20T00:00:00+00:00 [queued]>
+[2023-12-21T04:47:01.686+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-12-21T04:47:01.747+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): first_attempt> on 2023-12-20 00:00:00+00:00
+[2023-12-21T04:47:01.764+0000] {standard_task_runner.py:57} INFO - Started process 110 to run task
+[2023-12-21T04:47:01.775+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', '12_20_download_fx_mkt_data', 'first_attempt', 'scheduled__2023-12-20T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/get_fx_mkt_data.py', '--cfg-path', '/tmp/tmp6vw0i2i3']
+[2023-12-21T04:47:01.791+0000] {standard_task_runner.py:85} INFO - Job 24: Subtask first_attempt
+[2023-12-21T04:47:02.109+0000] {task_command.py:416} INFO - Running <TaskInstance: 12_20_download_fx_mkt_data.first_attempt scheduled__2023-12-20T00:00:00+00:00 [running]> on host af037f8bd433
+[2023-12-21T04:47:02.824+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='12_20_download_fx_mkt_data' AIRFLOW_CTX_TASK_ID='first_attempt' AIRFLOW_CTX_EXECUTION_DATE='2023-12-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-20T00:00:00+00:00'
+[2023-12-21T04:47:05.032+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/app/sal/etl/main.py", line 37, in main
+    tickers = s3_data_service.read_excel("tickers.xlsx", sep=',', sheet_name="daily")
+  File "/opt/airflow/app/sal/services/boto/data_service.py", line 17, in read_excel
+    return pd.read_excel(io.BytesIO(response['Body'].read()), **kwargs)
+TypeError: read_excel() got an unexpected keyword argument 'sep'
+[2023-12-21T04:47:05.174+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=12_20_download_fx_mkt_data, task_id=first_attempt, execution_date=20231220T000000, start_date=20231221T044701, end_date=20231221T044705
+[2023-12-21T04:47:05.283+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 24 for task first_attempt (read_excel() got an unexpected keyword argument 'sep'; 110)
+[2023-12-21T04:47:05.344+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-21T04:47:05.458+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
