@@ -5,6 +5,7 @@ scikit-learn
 oandapyV20
 backtrader
 alpaca-py
+requests
 pydantic
 openpyxl
 pandas

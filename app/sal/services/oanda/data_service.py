@@ -8,7 +8,7 @@ from oandapyV20.contrib.factories import InstrumentsCandlesFactory
 
 import pandas as pd
 
-class ForexDataService():
+class OandaDataService():
 
     def __init__(self, access_token, account_id, environment='practice', headers=None, request_params=None):
             

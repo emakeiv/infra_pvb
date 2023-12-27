@@ -1,5 +1,6 @@
+from datetime import datetime
 from dataclasses import dataclass
-from dal.models.base_model import Base
+from app.dal.models.base_model import Base
 from sqlalchemy.orm import relationship
 from sqlalchemy import (
     Date,
@@ -27,8 +28,8 @@ class SecuritySymbol(Base):
       name = Column(String, nullable=False)
       sector = Column(String, nullable=False)
       currency = Column(String(64))
-      created = Column(TIMESTAMP, nullable=False)
-      updated = Column(TIMESTAMP, nullable=False)
+      created = Column(TIMESTAMP, nullable=False, default=datetime.now())
+      updated = Column(TIMESTAMP, nullable=False, default=datetime.now()) 
       exchange = relationship("Exchange")
 
       def dict(self):
@@ -48,8 +49,8 @@ class SecurityDailyPrice(Base):
 
       security_id = Column(Integer, ForeignKey('security_symbol.id'), nullable=False, index=True)
       data_vendor_id = Column(Integer, ForeignKey('data_vendor.id'), nullable=False)
-      created = Column(TIMESTAMP, nullable=False)
-      updated = Column(TIMESTAMP, nullable=False)
+      created = Column(TIMESTAMP, nullable=False, default=datetime.now())
+      updated = Column(TIMESTAMP, nullable=False, default=datetime.now()) 
       date = Column(TIMESTAMP, index=True)
       open_price = Column(Numeric)
       high_price = Column(Numeric)

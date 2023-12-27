@@ -28,7 +28,8 @@ class Settings(BaseSettings):
 
     alpaca_api_key: str
     alpaca_sec_key: str
-
+    alpaca_base_url: str
+    
     oanda_api_key: str
     oanda_acc_id: str
 

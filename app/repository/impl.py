@@ -1,13 +1,13 @@
 from sqlalchemy import func
 
-from dal.models.exchanges_model import Exchange 
-from dal.models.vendors_model import DataVendor
-from dal.models.securities_model import (
+from app.dal.models.exchanges_model import Exchange 
+from app.dal.models.vendors_model import DataVendor
+from app.dal.models.securities_model import (
       SecuritySymbol,
       SecurityDailyPrice,
       SecurityMinutelyPrice
 )
-from repository.entity import RepositoryEntity
+from app.repository.entity import RepositoryEntity
 
 class ExchangeRepository(RepositoryEntity[Exchange]):
     def __init__(self, session):

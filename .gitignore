@@ -1,6 +1,8 @@
 logs/*
 dags/*
 
+airflow/logs/*
+
 untrack/
 mlflow
 minio/.minio.sys/*

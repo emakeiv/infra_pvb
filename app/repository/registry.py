@@ -1,4 +1,4 @@
-from repository.interface import IRepository
+from app.repository.interface import IRepository
 
 class RepositoryRegistry:
     __instance = None 

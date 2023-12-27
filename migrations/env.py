@@ -5,10 +5,10 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from dal.models.base_model import Base
-from dal.models.exchanges_model import *
-from dal.models.securities_model import *
-from dal.models.vendors_model import *
+from app.dal.models.base_model import Base
+from app.dal.models.exchanges_model import *
+from app.dal.models.securities_model import *
+from app.dal.models.vendors_model import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

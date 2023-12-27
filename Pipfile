@@ -12,6 +12,7 @@ oandapyv20 = "*"
 requests = "*"
 six = "*"
 pydantic-settings = "*"
+alpaca-trade-api = "*"
 
 [dev-packages]
 

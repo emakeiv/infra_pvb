@@ -10,8 +10,8 @@ class RepositoryEntity(Generic[T], IRepository[T]):
         self.entity = entity
         self.session = session
 
-    def get(self, symbol: str) -> Optional[T]:
-        return self.session.query(self.entity).filter_by(symbol=symbol).first()
+    def get(self, **kwargs) -> Optional[T]:
+        return self.session.query(self.entity).filter_by(**kwargs).first()
 
     def list(self, offset: int = None, limit: int = None, **query_conditions) -> List[T]:
         query = self.session.query(self.entity)
@@ -26,11 +26,11 @@ class RepositoryEntity(Generic[T], IRepository[T]):
 
         return [entity.dict() for entity in query.all()]
 
-    def add(self, **kwargs) -> T:
-        entity_model = self.entity(**kwargs)
-        self.session.add(entity_model)
+    def add(self, entity) -> T:
+        # entity_model = self.entity(**kwargs)
+        self.session.add(entity)
         self.session.commit()
-        return entity_model
+        #return entity_model
 
     def update(self, entity_id: int, **kwargs) -> Optional[T]:
         entity_model = self.session.query(

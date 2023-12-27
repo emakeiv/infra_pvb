@@ -1,6 +1,6 @@
 
 
-class StockDataService():
+class AlpacaDataService():
       
       def __init__(self):
             pass
