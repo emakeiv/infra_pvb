@@ -13,6 +13,8 @@ requests = "*"
 six = "*"
 pydantic-settings = "*"
 alpaca-trade-api = "*"
+polygon-api-client = "*"
+yfinance = "*"
 
 [dev-packages]
 

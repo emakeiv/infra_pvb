@@ -13,8 +13,8 @@ DAG_DEFAULT_ARGS={
 
 with DAG(
       default_args = DAG_DEFAULT_ARGS,
-      dag_id='12_21_fx_mkt_data',
-      start_date=datetime(2023, 12,19),
+      dag_id='12_30_fx_mkt_data',
+      start_date=datetime(2023, 12,29),
       schedule_interval='@daily'
 ) as dag:
       task1 = PythonOperator(

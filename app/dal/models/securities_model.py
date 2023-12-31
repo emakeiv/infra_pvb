@@ -82,8 +82,8 @@ class SecurityMinutelyPrice(Base):
     __tablename__ = 'security_minute_price'
     __metadata__ = Base.metadata
     
-    data_vendor_id = Column(Integer, ForeignKey('data_vendor.id'), nullable=False)
     security_id = Column(Integer, ForeignKey('security_symbol.id'), nullable=False, index=True)
+    data_vendor_id = Column(Integer, ForeignKey('data_vendor.id'), nullable=False)
     created = Column(TIMESTAMP, nullable=False)
     updated = Column(TIMESTAMP, nullable=False)
     date = Column(TIMESTAMP, index=True)
@@ -92,6 +92,7 @@ class SecurityMinutelyPrice(Base):
     low_price = Column(Numeric)
     close_price = Column(Numeric)
     volume = Column(BigInteger)
+    
     data_vendor = relationship("DataVendor")
     security = relationship("SecuritySymbol")
 

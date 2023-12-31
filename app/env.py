@@ -33,6 +33,8 @@ class Settings(BaseSettings):
     oanda_api_key: str
     oanda_acc_id: str
 
+    polygon_api_key:str
+    
     auth_secret: str
     auth_algo: str
 

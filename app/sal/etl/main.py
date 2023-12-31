@@ -51,6 +51,13 @@ def main():
       repository_registry.add('security_minutely_price_repo', SecurityMinutelyPriceRepository)
       repository_registry.add('data_vendor_repo', DataVendorRepository)
       repository_registry.add('exchange_repo', ExchangeRepository)
+      
+
+      if not tickers.empty:
+            
+            daily_price_repo = repository_registry.get('security_daily_price_repo')
+            daily_price_repo.get_last_dates(tickers.symbols.tolist())
+
 
       # daily_price_repo = repository_registry.get('security_daily_price_repo')
       # last_dates_for_tickers = daily_price_repo.get_last_dates(tickers)
