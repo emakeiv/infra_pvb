@@ -13,5 +13,5 @@ def get_mkt_data(ticker, start, end, interval):
     return df
 
 
-data =get_mkt_data('JPY=X', '2023-12-01', '2023-12-30', '1h')
+data =get_mkt_data('JPY=X', '2010-01-01', '2023-12-30', '1d')
 print(data)

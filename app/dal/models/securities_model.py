@@ -48,10 +48,10 @@ class SecurityDailyPrice(Base):
       __metadata__ = Base.metadata
 
       security_id = Column(Integer, ForeignKey('security_symbol.id'), nullable=False, index=True)
-      data_vendor_id = Column(Integer, ForeignKey('data_vendor.id'), nullable=False)
+      data_vendor_id = Column(Integer, ForeignKey('data_vendor.id'))
       created = Column(TIMESTAMP, nullable=False, default=datetime.now())
       updated = Column(TIMESTAMP, nullable=False, default=datetime.now()) 
-      date = Column(TIMESTAMP, index=True)
+      date = Column(TIMESTAMP, index=True, nullable=False)
       open_price = Column(Numeric)
       high_price = Column(Numeric)
       low_price = Column(Numeric)
@@ -67,7 +67,7 @@ class SecurityDailyPrice(Base):
 
       def dict(self):
             return {
-                  "security_id": self.id,
+                  "security_id": self.security_id,
                   "date": self.date,
                   "open": self.open_price,
                   "high": self.high_price,
@@ -86,7 +86,7 @@ class SecurityMinutelyPrice(Base):
     data_vendor_id = Column(Integer, ForeignKey('data_vendor.id'), nullable=False)
     created = Column(TIMESTAMP, nullable=False)
     updated = Column(TIMESTAMP, nullable=False)
-    date = Column(TIMESTAMP, index=True)
+    date = Column(TIMESTAMP, index=True, nullable=False)
     open_price = Column(Numeric)
     high_price = Column(Numeric)
     low_price = Column(Numeric)

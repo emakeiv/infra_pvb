@@ -15,6 +15,7 @@ pydantic-settings = "*"
 alpaca-trade-api = "*"
 polygon-api-client = "*"
 yfinance = "*"
+openpyxl = "*"
 
 [dev-packages]
 

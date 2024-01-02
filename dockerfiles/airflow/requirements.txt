@@ -1,11 +1,16 @@
 apache-airflow[celery]
+polygon-api-client
+pandas_datareader
 pydantic-settings
+alpaca-trade-api
 psycopg2-binary
 scikit-learn
+sqlalchemy
 oandapyV20
 backtrader
 alpaca-py
 requests
+yfinance
 pydantic
 openpyxl
 pandas
@@ -14,3 +19,4 @@ minio
 boto3
 xlrd
 v20
+six
