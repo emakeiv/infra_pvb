@@ -68,11 +68,12 @@ class SecurityDailyPrice(Base):
       def dict(self):
             return {
                   "security_id": self.security_id,
+                  "data_vendor_id": self.data_vendor_id,
                   "date": self.date,
-                  "open": self.open_price,
-                  "high": self.high_price,
-                  "low": self.low_price,
-                  "close": self.close_price,
+                  "open_price": self.open_price,
+                  "high_price": self.high_price,
+                  "low_price": self.low_price,
+                  "close_price": self.close_price,
                   "volume": self.volume
         }
     
@@ -103,10 +104,11 @@ class SecurityMinutelyPrice(Base):
     def dict(self):
         return {
             "security_id": self.security_id,
+            "data_vendor_id": self.data_vendor_id,
             "date": self.date,
-            "open": self.open_price,
-            "high": self.high_price,
-            "low": self.low_price,
-            "close": self.close_price,
+            "open_price": self.open_price,
+            "high_price": self.high_price,
+            "low_price": self.low_price,
+            "close_price": self.close_price,
             "volume": self.volume
         }

@@ -7,19 +7,21 @@ from app.sal.etl.main import main
 
 DAG_DEFAULT_ARGS={
     'owner': 'airflow',
-    'retries':5,
-    'retry_delay':timedelta(minutes=5)
+    'depends_on_past': False,
+    'retries':1,
+    'retry_delay':timedelta(minutes=1)
 }
 
 with DAG(
       default_args = DAG_DEFAULT_ARGS,
-      dag_id='24_01_02_fx_mkt_data',
+      dag_id='get_fx_mkt_data',
       start_date=datetime(2024, 1, 1),
-      schedule_interval='@daily'
+      schedule_interval='@daily',
+      catchup=False
 ) as dag:
-      task1 = PythonOperator(
+      update_daily = PythonOperator(
             task_id='first_attempt',
             python_callable=main
       )
 
-      task1
+      update_daily

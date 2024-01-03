@@ -52,7 +52,7 @@ class OandaDataService():
         valid_rows = df.dropna()
     
         if len(valid_rows) != len(df):
-            print(f"there is missing data for {len(df) - len(valid_rows)} rows")
+            print(f"there are missing data for {len(df) - len(valid_rows)} rows")
 
         df.set_index('time', inplace=True)
         return df

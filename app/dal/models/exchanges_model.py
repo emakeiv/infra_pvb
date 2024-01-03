@@ -21,4 +21,11 @@ class Exchange(Base):
     created = Column(TIMESTAMP, nullable=False, default=datetime.now())
     updated = Column(TIMESTAMP, nullable=False, default=datetime.now())
      
-
+    def dict(self):
+        return {
+            "id": self.id,
+            "abbrev": self.abbrev,
+            "code": self.code,
+            "name": self.name,
+            "currency": self.currency
+        }

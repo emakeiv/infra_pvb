@@ -20,3 +20,9 @@ class DataVendor(Base):
     created = Column(TIMESTAMP, nullable=False, default=datetime.now())
     updated = Column(TIMESTAMP, nullable=False, default=datetime.now())
 
+    def dict(self):
+        return {
+            "security_id": self.id,
+            "name": self.name,
+            "website_url": self.website_url
+        }

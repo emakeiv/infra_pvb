@@ -8,6 +8,7 @@ from app.dal.models.securities_model import SecurityDailyPrice
 from sal.services.oanda.data_service import OandaDataService
 from sal.services.yahoo_finance.data_service import YahooFinanceDataService
 from sal.services.boto.data_service import S3DataService
+
 from repository.registry import RepositoryRegistry
 from repository.impl import (
       SecuritySymbolRepository,
@@ -17,14 +18,7 @@ from repository.impl import (
       ExchangeRepository
 )
 
-
 from app.env import settings
-
-def fetch_tickers():
-      pass
-
-def fetch_vendor_id():
-      pass
 
 def extract():
       pass 
@@ -33,10 +27,20 @@ def transform():
       pass
 
 def load(data, repo, vendor_id, security_id):
-      records = []
+      records = list()
+      check_duplicates = set()
       for time, row in data.iterrows():
+            record_identifier = (security_id, time)
+            if record_identifier in check_duplicates:
+                  print(f"skipping duplicate record with security_id:{security_id}, date:{time}")
+                  continue
+
             existing_record = repo.get(security_id=security_id, date=time)
-            print(f'found a duplicate record!: {existing_record}')
+            if existing_record is not None:
+                  print(f"skipping existing record with security_id:{security_id}, date:{time}")
+                  continue
+
+            check_duplicates.add(record_identifier)
             _record = SecurityDailyPrice(
                   security_id = security_id,
                   data_vendor_id= vendor_id,
@@ -48,8 +52,8 @@ def load(data, repo, vendor_id, security_id):
                   volume = row.volume
             )
             records.append(_record.dict())
-      print(len(records))
-      repo.bulk_insert(records)
+      if records:
+            repo.bulk_insert(records)
       
 
 def main():
@@ -81,15 +85,14 @@ def main():
             daily_price_repo = repository_registry.get('security_daily_price_repo')
             data_vendor_repo = repository_registry.get('data_vendor_repo')
             vendor_id = data_vendor_repo.get(name="oanda").id
-            print(f'vendor id: {vendor_id}')
             last_day_prices = daily_price_repo.get_last_dates(tickers.symbols.tolist())
 
-            for security_id, symbol, last_date in last_day_prices[:1]:
-                  print(f'security id: {security_id}, symbol: {symbol}, last date: {last_date}')
+            for security_id, symbol, last_date in last_day_prices:
+                  print(f'vendor id: {vendor_id}, security id: {security_id}, symbol: {symbol}, last date: {last_date}')
                   last_date = last_date + datetime.timedelta(days=1) if last_date else initial_start_date
                   try:
                         data = market_data_service.fetch_data(symbol, start_date=last_date, granularity='D')
-                        # print(f'fetching {symbol} market data from {last_date} to {datetime.datetime.now()}')
+                        print(f'fetching {symbol} market data from {last_date} to {datetime.datetime.now()}')
                         loaded_data = load(data, daily_price_repo, vendor_id=vendor_id, security_id=security_id)
                         print(f"{symbol} market data is loaded into database")
 
