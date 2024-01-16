@@ -27,34 +27,34 @@ def transform():
       pass
 
 def load(data, repo, vendor_id, security_id):
-      records = list()
+      records = []
       check_duplicates = set()
+
       for time, row in data.iterrows():
             record_identifier = (security_id, time)
-            if record_identifier in check_duplicates:
-                  print(f"skipping duplicate record with security_id:{security_id}, date:{time}")
-                  continue
+            if record_identifier not in check_duplicates:
+                  try:
+                        if not repo.get(security_id=security_id, date=time):
+                              record = SecurityDailyPrice(
+                                    security_id=security_id,
+                                    data_vendor_id=vendor_id,
+                                    date=time,
+                                    open_price=row.open,
+                                    high_price=row.high,
+                                    low_price=row.low,
+                                    close_price=row.close,
+                                    volume=row.volume
+                              )
+                              records.append(record.dict())
+                              check_duplicates.add(record_identifier)
+                  except Exception as e:
+                        print(f"error checking/adding record: {e}")
 
-            existing_record = repo.get(security_id=security_id, date=time)
-            if existing_record is not None:
-                  print(f"skipping existing record with security_id:{security_id}, date:{time}")
-                  continue
-
-            check_duplicates.add(record_identifier)
-            _record = SecurityDailyPrice(
-                  security_id = security_id,
-                  data_vendor_id= vendor_id,
-                  date = time,
-                  open_price = row.open,
-                  high_price = row.high,
-                  low_price = row.low,
-                  close_price = row.close,
-                  volume = row.volume
-            )
-            records.append(_record.dict())
       if records:
-            repo.bulk_insert(records)
-      
+            try:
+                  repo.bulk_insert(records)
+            except Exception as e:
+                  print(f"error during bulk insert: {e}")
 
 def main():
       initial_start_date = datetime.datetime(2010,12,30)

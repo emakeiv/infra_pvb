@@ -1,5 +1,8 @@
 from dataclasses import dataclass
 from pdb import run
+from re import T
+
+from numpy import record, size
 
 from dal.models.base_model import Base
 from sqlalchemy import (
@@ -11,7 +14,6 @@ from sqlalchemy import (
       Boolean, 
       ForeignKey
 )
-
 
 @dataclass
 class RunInformation(Base):
@@ -48,28 +50,47 @@ class StrategyPerformance(Base):
       total_compound_return = Column(Float)
       avg_return = Column(Float)
       annual_norm_return = Column(Float)
-      max_draw_per = Column(Float)
+      max_draw_percentage = Column(Float)
       max_drawdown = Column(Float)
       max_dwawdown_duration = Column(Float)
 
 
+@dataclass
+class PositionPerformance(Base):
+      __tablename__ ='position_performance'
+      __metadata__ = Base.metadata
+      id = Column(Integer, primary_key=True)
+      run_id = Column(Integer, ForeignKey('run_information.id'))
+      recorded_time = Column(DateTime, nullable=False)
+      strategy = Column(String, nullable=False)
+      ref = Column(Integer, nullable=False)
+      direction = Column(String, nullable=False)
+      ticker = Column(String, nullable=False)
+      datein = Column(DateTime, nullable=False)
+      pricein = Column(Float, nullable=False)
+      dateout = Column(DateTime, nullable=False)
+      priceout = Column(Float, nullable=False)
+      change_percentage = Column(Float, nullable=False)
+      pnl = Column(Float, nullable=False)
+      pnl_percentage = Column(Float, nullable=False)
+      size = Column(Float, nullable=False)
+      value = Column(Float, nullable=False)
+      cumpln = Column(Float, nullable=False)
+      nbars = Column(Float, nullable=False)
+      pnl_per_bar = Column(Float, nullable=False)
+      mfe_percentage = Column(Float)
+      mae_percentage = Column(Float)
 
-      # strategy_performance (
-      #                   id SERIAL PRIMARY KEY,
-      #                   run_id INTEGER NOT NULL,
-      #                   total_open NUMERIC NULL,
-      #                   total_closed NUMERIC NULL,
-      #                   total_won NUMERIC NULL,
-      #                   total_lost NUMERIC NULL,
-      #                   win_streak NUMERIC NULL,
-      #                   lose_streak NUMERIC NULL,
-      #                   pnl_net NUMERIC NULL,
-      #                   strike_rate NUMERIC NULL,
-      #                   sqn NUMERIC NULL,
-      #                   total_compound_return NUMERIC NULL,
-      #                   avg_return NUMERIC NULL,
-      #                   annual_norm_return NUMERIC NULL,
-      #                   max_draw_per NUMERIC NULL,
-      #                   max_draw_val NUMERIC NULL,
-      #                   max_draw_len NUMERIC NULL,
-      #                   FOREIGN KEY (run_id) REFERENCES run_information(run_id)
+@dataclass
+class Positions(Base):
+      __tablename__ = 'positions'
+      __metadata__ = Base.metadata
+      run_id = Column(Integer, ForeignKey('run_information.id'))
+      recorded_time = Column(DateTime, nullable=False)
+      strategy = Column(String, nullable=False)
+      transaction_date = Column(DateTime, nullable=False)
+      size = Column(Float, nullable=False)
+      price = Column(Float, nullable=False)
+      sid = Column(Integer, nullable=False)
+      ticker = Column(String, nullable=False)
+      value = Column(Float, nullable=False)
