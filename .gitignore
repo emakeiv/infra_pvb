@@ -5,10 +5,9 @@ airflow/logs/*
 
 untrack/
 mlflow
-minio/.minio.sys/*
-minio/mlflow-models/*
-minio/support-files/*
+minio/
 notes/*
+
 
 # environments
 .env

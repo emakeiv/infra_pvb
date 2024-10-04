@@ -84,6 +84,7 @@ def main():
       if not tickers.empty:     
             daily_price_repo = repository_registry.get('security_daily_price_repo')
             data_vendor_repo = repository_registry.get('data_vendor_repo')
+            
             vendor_id = data_vendor_repo.get(name="oanda").id
             last_day_prices = daily_price_repo.get_last_dates(tickers.symbols.tolist())
 

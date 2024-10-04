@@ -16,8 +16,10 @@ alpaca-trade-api = "*"
 polygon-api-client = "*"
 yfinance = "*"
 openpyxl = "*"
+backtrader = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.8"
