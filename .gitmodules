@@ -1,0 +1,6 @@
+[submodule "services/core-data-entities"]
+	path = services/core-data-entities
+	url = git@github.com:emakeiv/core-data-entities.git
+[submodule "services/securities-data-service"]
+	path = services/securities-data-service
+	url = git@github.com:emakeiv/securities-data-service.git
