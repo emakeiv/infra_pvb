@@ -7,3 +7,6 @@
 [submodule "services/market-data-service"]
 	path = services/market-data-service
 	url = git@github.com:emakeiv/market-data-service.git
+[submodule "services/analytics-engine-service"]
+	path = services/analytics-engine-service
+	url = git@github.com:emakeiv/analytics-engine-service.git
