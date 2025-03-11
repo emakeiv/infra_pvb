@@ -4,3 +4,6 @@
 [submodule "services/main-auth-service"]
 	path = services/main-auth-service
 	url = git@github.com:emakeiv/main-auth-service.git
+[submodule "services/market-data-service"]
+	path = services/market-data-service
+	url = git@github.com:emakeiv/market-data-service.git
