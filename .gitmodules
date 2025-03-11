@@ -13,3 +13,9 @@
 [submodule "services/data-providers-service"]
 	path = services/data-providers-service
 	url = git@github.com:emakeiv/data-providers-service.git
+[submodule "services/pipeline-engine-service"]
+	path = services/pipeline-engine-service
+	url = git@github.com:emakeiv/pipeline-engine-service.git
+[submodule "services/reverse-proxy-service"]
+	path = services/reverse-proxy-service
+	url = git@github.com:emakeiv/reverse-proxy-service.git
