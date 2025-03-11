@@ -1,4 +1,4 @@
-version: '3.8'
+
 x-airflow-common:
   #image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}
   &airflow-common
@@ -25,117 +25,10 @@ x-airflow-common:
   depends_on: &airflow-common-depends-on
     redis:
       condition: service_healthy
-    timescaledb:
+    database:
       condition: service_healthy
 
 services:
-
-  timescaledb:
-    image: timescale/timescaledb:latest-pg14
-    container_name: timescaledb
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_USER: ${POSTGRES_USER}
-
-      TIMESCALEDB_TELEMETRY: 'off'
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER}" ]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 5s
-    volumes:
-      - timescaledb-data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-    networks:
-      - timescaledb
-
-  pgadmin:
-    container_name: pgadmin
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: root
-    # healthcheck:
-    #   test:
-    #     [
-    #       "CMD",
-    #       "wget",
-    #       "-O",
-    #       "-",
-    #       "http://localhost:80/misc/ping"
-    #     ]
-    #   interval: 10s
-    #   timeout: 5s
-    #   start_period: 30s
-    #   retries: 3
-    volumes:
-      - db-data/:/var/lib/pgadmin
-    ports:
-      - "5050:80"
-    networks:
-      - timescaledb
-
-  minio:
-    container_name: minio
-    image: quay.io/minio/minio:RELEASE.2023-11-06T22-26-08Z
-    command: server --console-address ":9001" /data/
-    ports:
-      - "9000:9000"
-      - "9001:9001"
-    environment:
-      MINIO_ACCESS_KEY: ${AWS_ACCESS_KEY_ID}
-      MINIO_SECRET_KEY: ${AWS_SECRET_ACCESS_KEY}
-    healthcheck:
-      test:
-        [
-          "CMD",
-          "curl",
-          "-f",
-          "http://localhost:9000/minio/health/live"
-        ]
-      interval: 30s
-      timeout: 20s
-      retries: 3
-    networks:
-      - minio_app
-    volumes:
-      - ./minio/:/data
-
-  mlflow:
-    container_name: mlflow_server
-    build: ./dockerfiles/mlflow
-    image: mlflow_server
-    command: mlflow server --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@timescaledb/${MLFLOW_DB} --default-artifact-root s3://${AWS_S3_BUCKET} --host 0.0.0.0
-    ports:
-      - "5000:5000"
-    networks:
-      - timescaledb
-      - minio_app
-    environment:
-      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-      MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID}
-      MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY}
-      MLFLOW_S3_ENDPOINT_URL: ${MLFLOW_S3_ENDPOINT_URL}
-
-  redis:
-    image: redis:latest
-    expose:
-      - 6379
-    healthcheck:
-      test: [ "CMD", "redis-cli", "ping" ]
-      interval: 10s
-      timeout: 30s
-      retries: 50
-      start_period: 30s
-    restart: always
-    networks:
-      - redis_net
-
   airflow-init:
     <<: *airflow-common
     entrypoint: /bin/bash
@@ -293,36 +186,3 @@ services:
       - timescaledb
       - redis_net
       - minio_app
-
-  nginx:
-    image: nginx
-    container_name: "nginx_reverse"
-    volumes:
-      - ./nginx/:/etc/nginx/
-    ports:
-      - 80:80
-    depends_on:
-      - "airflow-webserver"
-      - "mlflow"
-      - "pgadmin"
-      - "minio"
-
-    links:
-      - "airflow-webserver"
-      - "mlflow"
-      - "pgadmin"
-      - "minio"
-
-    restart: always
-
-networks:
-  redis_net:
-    driver: bridge
-  timescaledb:
-    driver: bridge
-  minio_app:
-    driver: bridge
-
-volumes:
-  timescaledb-data:
-  db-data:

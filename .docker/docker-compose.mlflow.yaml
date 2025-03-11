@@ -1,0 +1,15 @@
+
+services:
+  mlflow:
+    build: ./dockerfiles/mlflow
+    image: mlflow_server
+    command: mlflow server --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@timescaledb/${MLFLOW_DB} --default-artifact-root s3://${AWS_S3_BUCKET} --host 0.0.0.0
+    ports:
+      - "5000:5000"
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+
+    networks:
+      - database_net
+      - minio_net

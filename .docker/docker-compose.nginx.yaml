@@ -1,0 +1,22 @@
+
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/:/etc/nginx/
+    ports:
+      - 80:80
+    depends_on:
+      - "mlflow"
+      - "pgadmin"
+      - "minio"
+
+    links:
+      - "mlflow"
+      - "pgadmin"
+      - "minio"
+
+    restart: unless-stopped
+    networks:
+      - database_net
+      - minio_net
