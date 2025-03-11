@@ -19,3 +19,6 @@
 [submodule "services/reverse-proxy-service"]
 	path = services/reverse-proxy-service
 	url = git@github.com:emakeiv/reverse-proxy-service.git
+[submodule "services/strategy-engine-service"]
+	path = services/strategy-engine-service
+	url = git@github.com:emakeiv/strategy-engine-service.git
